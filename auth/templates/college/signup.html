@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'college/base.html' %}
+{%block body_block%}
+
+<div class="container">
+<h1> Welcome to Sign up Page </h1>
+<form method="post">
+{{form.as_p}}
+{% csrf_token %}
+<input type="submit" class='btn btn-primary' value="Signup">
+</form>
+ </div>
+
+{%endblock%}
